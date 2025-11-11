@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game · 1803 Vikings Robotics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="navbar" class="navbar always-visible">
+    <div class="nav-inner">
+        <div class="nav-logo">
+            <img src="Medias/1803 Vikings logo.png" alt="1803 Vikings Logo">
+            <span>1803 Vikings</span>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="robots.html" class="nav-link">Robots</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="sponsors.html" class="nav-link">Sponsors</a>
+            <a href="media.html" class="nav-link">Media</a>
+            <a href="game.html" class="nav-link active">Game</a>
+        </nav>
+    </div>
+</header>
+<main>
+<section class="page-hero">
+    <div class="section-inner">
+        <h1>1803 Challenge: Collect the Game Pieces</h1>
+        <p>Use the arrow keys or WASD to drive your “robot” and collect as many game pieces as possible before time runs out.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-inner">
+        <div id="game-wrapper" class="card" style="max-width:600px;margin:0 auto;text-align:center;">
+            <canvas id="robotGame" width="560" height="320" style="background:#050608;border-radius:10px;border:1px solid rgba(255,255,255,0.18);"></canvas>
+            <p id="game-info" style="margin-top:10px;color:var(--text-muted);font-size:0.85rem;">
+                Move: ↑ ↓ ← → or W A S D · Score 10+ before the timer hits 0.
+            </p>
+            <button id="restartBtn" class="cta-button secondary">Restart</button>
+        </div>
+    </div>
+</section>
+</main>
+
+
+
+<div id="footer-container"></div>
+
+
+<script src="game.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

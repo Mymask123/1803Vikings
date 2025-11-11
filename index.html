@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="1803 Vikings Robotics Team - Paul D. Schreiber High School">
+  <title>1803 Vikings Robotics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar (hidden on load, appears on scroll) -->
+  <header id="navbar" class="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="Medias/1803 Vikings logo.png" alt="1803 Vikings Logo">
+        <span>1803 Vikings</span>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="robots.html" class="nav-link">Robots</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="sponsors.html" class="nav-link">Sponsors</a>
+        <a href="media.html" class="nav-link">Media</a>
+        <a href="game.html" class="nav-link">Game</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main page content -->
+  <main>
+    <section id="hero" class="hero-section">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="Medias/videoplayback.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <img src="Medias/1803 Vikings logo.png" alt="Paul D. Schreiber High School">
+          <span>Paul D. Schreiber HS · Port Washington, NY</span>
+        </div>
+        <h1><span class="hero-1803">1803</span> Vikings Robotics</h1>
+        <h2>Built by passion. Driven by innovation.</h2>
+        <p>Designing, building, and competing with high-performance robots while empowering the next generation of engineers.</p>
+        <div class="hero-actions">
+          <a href="#about" class="cta-button primary">About Our Team</a>
+          <a href="sponsors.html" class="cta-button outline">Become a Sponsor</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">About Our Team</h2>
+        <p class="section-text">
+          1803 Vikings Robotics is a student-led FIRST Robotics Competition team from Paul D. Schreiber High School in Port Washington, NY. 
+          Founded in 2006, we bring together passionate students in not only CAD, programming, and circuitry, but also students in art, marketing, and business.
+          We produce future engineers and leaders through hands-on STEM experiences, community outreach, and collaboration.
+        </p>
+      </div>
+    </section>
+
+    <section id="team-preview" class="section alt">
+      <div class="section-inner">
+        <h2 class="section-title">Meet the Vikings</h2>
+        <p class="section-text">
+          Our members are organized into subteams: Mechanical, Programming, Electrical, CAD,
+          Strategy, and Media. Together, we build more than robots—we build leadership,
+          creativity, and teamwork.
+        </p>
+        <div class="grid-3">
+          <div class="card"><h3>Leadership</h3><p>Captains coordinating design, build, code, and competition strategy.</p></div>
+          <div class="card"><h3>Build & Code</h3><p>From CAD and machining to autonomous routines and vision systems.</p></div>
+          <div class="card"><h3>Outreach & Media</h3><p>Spreading STEM and documenting our journey.</p></div>
+        </div>
+        <a href="team.html" class="cta-button secondary">Meet the Full Team</a>
+      </div>
+    </section>
+
+    <section id="sponsor-cta" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">Support 1803 Vikings</h2>
+        <p class="section-text">
+          Work with us to inspire the next generation of engineers and innovators.
+          Your sponsorship helps us access resources, attend competitions, and expand our outreach efforts.
+          Make a difference starting in 1803 Vikings.
+        </p>
+        <a href="sponsors.html" class="cta-button primary">Become a Sponsor</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer (loaded dynamically) -->
+  <div id="footer-container"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
